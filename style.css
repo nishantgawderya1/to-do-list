@@ -3,8 +3,8 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 
 body {
-    background-color: #61ff0c;
-    color: #43ff35;
+    background-color: #000080;
+    color: #FF00FF;
     font-family: "Roboto Mono", monospace;
     font-size: 14px;
     line-height: 20px;
@@ -22,11 +22,11 @@ body {
 }
 
 .tdl-holder h2 {
-    background-color: #9aff8b;
+    background-color: #ADD8E6;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     text-align: center;
-    color: #000000;
+    color: #FFFFFF;
     font-family: "Roboto Mono", monospace;
     font-size: 25px;
     font-weight: 100;
