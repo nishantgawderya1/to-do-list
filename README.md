@@ -1,7 +1,3 @@
-<div class="image-container">
-  <img class="CoverImagee" src="GIT HUB COVER.png" alt="Cover">
-</div>
-          
 <h3> To-Do List Website </h3>
 
 The To-Do List Website is a web application developed using HTML, CSS, and JavaScript. It provides a simple and intuitive interface for managing tasks and organizing daily activities.
