@@ -15,11 +15,9 @@ The To-Do List Website features a minimalist and clean design. The interface is 
 * <b>Task Management:</b> Users can add new tasks to their to-do list, providing a brief description of each task.
 * <b>Task Completion:</b> Users can mark tasks as completed, visually indicating their progress and keeping track of their accomplishments.
 * <b>Task Removal:</b> Users can easily remove tasks from the list when they are no longer needed or completed.
-* <b>Dynamic Updates:</b> The interface updates in real-time, reflecting any changes made to the task list without requiring a page reload.
 * <b>User-Friendly Interaction:</b> The user interface is designed to be intuitive and responsive, providing a seamless experience across different devices and screen sizes.
 
 <h4>What I've Learned</h4>
 
-* <b>DOM Manipulation:</b> Developing the To-Do List Website allowed me to enhance my skills in manipulating the Document Object Model (DOM) using JavaScript. I learned how to dynamically add, update, and remove HTML elements to create interactive interfaces.
 * <b>Event Handling:</b> Through the project, I gained experience in handling user interactions and responding to events such as button clicks and keypresses, enabling smooth and efficient task management.
 * <b>Local Storage:</b> To provide persistence, I learned how to utilize the browser's Local Storage API to store and retrieve task data, allowing users to keep their tasks even after refreshing the page or closing the browser.
