@@ -3,11 +3,13 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 
 body {
-    background-color: #00027b;
-    color: #001279;
+    background-color: #1a1a1a; /* Dark background */
+    color: #ffffff; /* Light text */
     font-family: "Roboto Mono", monospace;
     font-size: 14px;
     line-height: 20px;
+    margin: 0;
+    padding: 0;
 }
 
 *:focus {
@@ -18,20 +20,24 @@ body {
 .tdl-holder {
     margin: 0px auto;
     width: 400px;
-    margin-top: 200px;
+    margin-top: 100px;
+    background-color: #2d2d2d; /* Dark container */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
 }
 
 .tdl-holder h2 {
-    background-color: #1f59f9;
+    background-color: #444; /* Darker header */
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     text-align: center;
-    color: #000000;
+    color: #ffffff;
     font-family: "Roboto Mono", monospace;
     font-size: 25px;
     font-weight: 100;
     line-height: 56px;
-    margin: 0;
+    margin: -20px -20px 20px -20px;
 }
 
 .tdl-holder ul,
@@ -42,9 +48,11 @@ body {
 }
 
 .tdl-holder li {
-    background-color: #f4f4f4;
-    border-bottom: 1px solid #f4f4f4;
-    color: #b1b2c9;
+    background-color: #444; /* Darker task items */
+    border-bottom: 1px solid #555;
+    color: #ffffff;
+    margin-bottom: 10px;
+    border-radius: 4px;
 }
 
 .tdl-holder li span {
@@ -53,7 +61,7 @@ body {
     -moz-transition: all .2s linear;
     -o-transition: all .2s linear;
     transition: all .2s linear;
-    color: #808080;
+    color: #ffffff;
     font-size: 12px;
 }
 
@@ -66,13 +74,13 @@ body {
 }
 
 .tdl-holder label a {
-    background-color:#8e8e8e ;
+    background-color: #666;
     border-radius: 50%;
-    color: #f4f4f4;
+    color: #ffffff;
     display: none;
     float: right;
     font-weight: bold;
-    line-height: 16px; /* Set line-height equal to height for vertical centering */
+    line-height: 16px;
     height: 16px;
     margin-top: 20px;
     text-align: center;
@@ -89,8 +97,8 @@ body {
 }
 
 .tdl-holder label a:hover {
-    background-color: #1a1a1a;
-    color: #f4f4f4;
+    background-color: #ff4d4d;
+    color: #ffffff;
 }
 
 .tdl-holder input[type="checkbox"] {
@@ -101,7 +109,7 @@ body {
 
 .tdl-holder input[type="checkbox"] + i {
     border: 1px solid #989898;
-    background-color: #f4f4f4;
+    background-color: #444;
     border-radius: 50%;
     display: block;
     height: 16px;
@@ -111,7 +119,60 @@ body {
     z-index: 1;
 }
 
-/* Add these styles to your existing CSS */
+.tdl-holder input[type="checkbox"]:checked + i::after {
+    background-color: #6ee519;
+    border-radius: 50%;
+    content: '';
+    display: block;
+    height: 16px;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 16px;
+    z-index: 1;
+}
+
+.tdl-holder input[type="checkbox"]:checked ~ span {
+    color: #6ee519;
+    text-decoration: line-through;
+}
+
+.tdl-holder input[type="text"] {
+    background-color: #444;
+    border: none;
+    font-family: "Roboto Mono", monospace;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 12px;
+    margin: 0;
+    padding: 15px;
+    width: calc(100% - 30px);
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+.tdl-holder input[type="text"]:hover {
+    background-color: #555;
+}
+
+.tdl-holder input[type="text"]:focus {
+    background-color: #666;
+}
+
+.tdl-holder ::-webkit-input-placeholder {
+    color: #999;
+}
+
+.tdl-holder :-moz-placeholder {
+    color: #999;
+}
+
+.tdl-holder :-ms-input-placeholder {
+    color: #999;
+}
+
 #clear-all {
     background-color: #ff4d4d;
     border: none;
@@ -130,76 +191,10 @@ body {
 }
 
 .task-counter {
-    color: #808080;
+    color: #999;
     font-size: 12px;
     margin-top: 10px;
     text-align: center;
-}
-
-.tdl-holder input[type="checkbox"]:checked + i::after {
-    background-color: #6ee519;
-    border-radius: 50%;
-    content: '';
-    display: block;
-    height: 16px;
-    left: 0px;
-    position: absolute;
-    top: 0px;
-    width: 16px;
-    z-index: 1;
-}
-
-.tdl-holder input[type="checkbox"]:checked ~ span {
-    color: #000000;
-    text-decoration: line-through;
-}
-
-.tdl-holder input[type="text"] {
-    background-color: #f4f4f4;
-    border: none;
-    font-family: "Roboto Mono", monospace;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    color: #747474;
-    font-size: 12px;
-    margin: 0;
-    padding: 20px 15px;
-    width: 370px;
-    -webkit-transition: all .2s linear;
-    -moz-transition: all .2s linear;
-    -o-transition: all .2s linear;
-    transition: all .2s linear;
-}
-
-.tdl-holder input[type="text"]:hover {
-    color: #848484;
-}
-
-.tdl-holder input[type="text"]:focus {
-    color: #1a1a1a;
-}
-
-.tdl-holder ::-webkit-input-placeholder {
-    color: #808080;
-}
-
-.tdl-holder :-moz-placeholder {
-    color: #808080;
-}
-
-.tdl-holder :-ms-input-placeholder {
-    color: #808080;
-}
-
-.tdl-holder li.remove {
-    display: none;
-}
-
-.image-container {
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .behance {
@@ -207,15 +202,17 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    margin-left: 5px; /* Add margin-left */
 }
 
 .behance img {
     display: block;
     width: 25px;
     height: 25px;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin: 0 10px;
     cursor: pointer;
+    transition: transform 0.2s ease;
 }
 
+.behance img:hover {
+    transform: scale(1.2);
+}
